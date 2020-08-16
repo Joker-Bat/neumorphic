@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Neumarphic Design</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+	
+	<!-- Custom Css -->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="hero neu">
+		<div class="header neu">
+			<h1>Silverdev</h1>
+		</div>
+		<!-- Navigation Bar -->
+		<div class="hamburger">
+			<i class="fas fa-layer-group fa-2x"></i>
+		</div>
+		<nav id="nav">
+			<ul>
+				<li><i class="fab fa-facebook-f fa-2x neu"></i></li>
+				<li><i class="fab fa-instagram fa-2x neu"></i></li>
+				<li><i class="fab fa-youtube fa-2x neu"></i></li>
+			</ul>
+		</nav>
+
+		<!-- Content -->
+		<div class="content neu">
+			<h1>Neumarphic Design</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio unde quo voluptates non, incidunt animi tenetur temporibus a eaque voluptatem!</p>
+		</div>
+
+		<footer class="footer neu">
+			<small>&copy; All Rights Recerved 2020</small>
+		</footer>
+	</div>
+	
+
+
+	<script>
+		const hamburger = document.querySelector(".hamburger");
+		const nav = document.getElementById("nav");
+
+		hamburger.addEventListener("click", () => {
+			if (nav.style.display === "block") {
+				nav.style.display = "none";
+			} else {
+				nav.style.display = "block";
+			}
+	});
+	</script>
+</body>
+</html>
